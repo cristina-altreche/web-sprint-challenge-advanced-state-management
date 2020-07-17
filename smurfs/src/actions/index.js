@@ -19,3 +19,16 @@ export const getSmurf = () => {
       });
   };
 };
+
+
+export const NEW_SMURF_START = 'NEW_SMURF_START'
+export const NEW_SMURF_SUCCESS = 'NEW_SMURF_SUCCESS'
+export const NEW_SMURF_FAILED = 'NEW_SMURF_FAILED'
+
+export const newSmurf = (smurf) => (dispatch) => {
+    dispatch({ type: NEW_SMURF_START})
+
+    return axios.post('http://localhost:3333/smurfs', smurf)
+    .then(res => dispatch({type: NEW_SMURF_SUCCESS, payload: res.data}))
+    .catch(error => dispatch({ type: NEW_SMURF_FAILED, payload: error}))
+}
