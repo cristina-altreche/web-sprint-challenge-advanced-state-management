@@ -5,6 +5,7 @@ export const FETCH_SMURFS_START = "FETCH_SMURFS_START";
 export const FETCH_SMURFS_SUCCESS = "FETCH_SMURFS_SUCCESS";
 export const FETCH_SMURFS_FAILED = "FETCH_SMURFS_FAILED";
 
+///MY GET REQUEST FROM EXTERNAL DATA
 export const getSmurf = () => {
   return (dispatch) => {
     dispatch({ type: FETCH_SMURFS_START });
@@ -20,7 +21,7 @@ export const getSmurf = () => {
   };
 };
 
-
+////MY POST REQUEST FROM DATA
 export const NEW_SMURF_START = 'NEW_SMURF_START'
 export const NEW_SMURF_SUCCESS = 'NEW_SMURF_SUCCESS'
 export const NEW_SMURF_FAILED = 'NEW_SMURF_FAILED'
