@@ -1,4 +1,4 @@
-body {
+body,html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -9,7 +9,9 @@ body {
   flex-direction: row;
 }
 
-
+.App{
+  max-width: 100%;
+}
 
 h1{
   color: white;
@@ -39,9 +41,7 @@ p{
   font-size: 1.5rem;
   margin-left: 20px;
 }
-form{
-  width:50vw;
-}
+
 
 #sage, #sname, #sheight {
  width: 100%;
