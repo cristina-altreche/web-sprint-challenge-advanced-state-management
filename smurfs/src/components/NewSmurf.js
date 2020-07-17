@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import { connect } from 'react-redux'
 import { newSmurf } from '../actions'
 
+import { Input, InputLabel, Button } from '@material-ui/core'
+
 const NewSmurf = props => {
 
     const [smurf, setSmurf] = useState({name:"", age: "", height: ""})
@@ -22,8 +24,8 @@ const NewSmurf = props => {
 
     return (
         <form onSubmit={inputValues}>
-            <label>Smurf's Name
-                <input
+            <InputLabel>Smurf's Name&nbsp;
+                <Input
                 type="text"
                 name="name"
                 id="sname"
@@ -31,10 +33,10 @@ const NewSmurf = props => {
                 value={smurf.name}
                 placeholder="Smurf Name"
                 />
-            </label>
+            </InputLabel>
 
-            <label>Age</label>
-            <input
+            <InputLabel>Age&nbsp;</InputLabel>
+            <Input
             type="number"
             name="age"
             id="sage"
@@ -43,8 +45,8 @@ const NewSmurf = props => {
             placeholder="Smurf Age"
             />
 
-            <label>height
-                <input
+            <InputLabel>height&nbsp;
+                <Input
                 type="number"
                 name="height"
                 id="sheight"
@@ -52,8 +54,8 @@ const NewSmurf = props => {
                 value={smurf.height}
                 placeholder="height cm"
                 />
-            </label>
-            <button onClick={inputValues}>Add Smurf</button>
+            </InputLabel>
+            <Button onClick={inputValues}>Add Smurf</Button>
         </form>
     )
 }

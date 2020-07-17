@@ -1,5 +1,57 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   font-family: sans-serif;
+  background: dodgerblue;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
+
+
+
+h1{
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+
+}
+
+.MuiPaper-root {
+padding: 10px;
+margin: 5px;
+max-width: 400px;
+display: flex;
+flex-direction: column;
+}
+
+.village {
+ width: 100%;
+}
+
+.new-smurf{
+  width: 100%;
+}
+
+p{
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+form{
+  width:50vw;
+}
+
+#sage, #sname, #sheight {
+ width: 100%;
+ color: white;
+}
+
+.MuiFormLabel-root{
+  color: white;
+}
+
+
+
+
